@@ -5,17 +5,30 @@ import Card from './components/Card';
 import Techstack from './components/Techstack';
 import ReactL from './components/ReactL';
 import Contact from './components/Contact';
-import Shery from 'sheryjs';
-import vertexShader from './vertex.glsl';
-import fragmentShader from './fragment.glsl'
+// import Shery from 'sheryjs';
+// import vertexShader from './vertex.glsl';
+// import fragmentShader from './fragment.glsl'
 
-Shery.mouseFollower()
-
+// Temporarily disable SheryJS to avoid issues
+// We'll add it back once properly configured
 
 const email = "uvcodingop5@gmail.com";
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // useEffect(() => {
+  //   // Initialize SheryJS after component mounts
+  //   const initShery = async () => {
+  //     try {
+  //       const Shery = await import('sheryjs');
+  //       Shery.mouseFollower();
+  //     } catch (error) {
+  //       console.warn('SheryJS failed to load:', error);
+  //     }
+  //   };
+  //   initShery();
+  // }, []);
 
   return (
     <div id="main">
